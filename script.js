@@ -4,7 +4,7 @@ const nminutes = document.getElementById('minutes');
 const nseconds = document.getElementById('seconds');
 
 
-const ramadan = 'Apr 12 2021';
+const ramadan = 'Apr 02 2022';
 
 function countdown() {
     const ramadanDate = new Date(ramadan);
@@ -12,10 +12,10 @@ function countdown() {
 
     const totalSeconds = (ramadanDate - currentDate) / 1000;
 
-    days = Math.floor(totalSeconds / 60 / 60 / 24 );
-    hours = Math.floor(totalSeconds / 60 / 60 % 24 );
-    minutes = Math.floor(totalSeconds / 60 % 60 );
-    seconds = Math.floor(totalSeconds % 60 );
+    days = Math.floor(totalSeconds / 60 / 60 / 24);
+    hours = Math.floor(totalSeconds / 60 / 60 % 24);
+    minutes = Math.floor(totalSeconds / 60 % 60);
+    seconds = Math.floor(totalSeconds % 60);
 
 
     ndays.innerHTML = days;
@@ -35,4 +35,4 @@ function formatTime(time) {
 
 countdown();
 
-setInterval (countdown, 1000);
+setInterval(countdown, 1000);
