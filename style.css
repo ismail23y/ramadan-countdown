@@ -13,7 +13,7 @@ html {
 
 .top-section {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8)),
-    url(/img/pexels-konevi-2236674.jpg);
+    url("img/pexels-konevi-2236674.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -29,7 +29,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 8vh;
   font-size: 2rem;
 }
 
@@ -39,7 +38,7 @@ a {
 }
 
 .main-container {
-  min-height: 92vh;
+  min-height: 100vh;
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,8 +66,7 @@ a {
   background-color: transparent;
   width: 10rem;
   height: 10rem;
-  box-shadow: 0px 1px 10px rgb(189, 123, 123);
-  box-shadow: 0px 3px 20px rgb(189, 123, 123);
+  box-shadow: 0px 1px 10px rgb(189, 123, 123), 0px 3px 20px rgb(189, 123, 123);
 }
 
 .seconds-c {
@@ -108,7 +106,7 @@ h4 {
 
 .contact-section {
   background-image: linear-gradient(20deg, #3b3a3b, #232323);
-  min-height: 92vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
