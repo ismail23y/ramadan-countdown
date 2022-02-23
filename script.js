@@ -4,7 +4,7 @@ const nminutes = document.getElementById('minutes');
 const nseconds = document.getElementById('seconds');
 
 
-const ramadan = 'Apr 02 2022';
+const ramadan = 'Apr 01 2022';
 
 function countdown() {
     const ramadanDate = new Date(ramadan);
